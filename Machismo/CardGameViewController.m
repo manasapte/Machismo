@@ -76,7 +76,7 @@
             [cardButton setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
         }
         cardButton.enabled = !card.isMatched;
-        [self.scoreLabel setText:[NSString stringWithFormat:@"Score: %i", [self.game score]]];
+        [self.scoreLabel setText:[NSString stringWithFormat:@"Score: %li", (long)[self.game score]]];
     }
 }
 
